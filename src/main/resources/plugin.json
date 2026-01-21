@@ -1,11 +1,10 @@
 {
-  "entrance": ".KotlinPluginTemplate",
-  "name": "KotlinPluginTemplate",
+  "entrance": "org.kanelucky.WelcomeMessage",
+  "name": "WelcomeMessage",
   "description": "${description}",
   "authors": [
-    "Cdm2883"
+    "Kanelucky"
   ],
   "version": "${version}",
-  "dependencies": [],
-  "website": "https://github.com/MineBuilders/allaymc-kotlin-plugin-template"
+  "dependencies": []
 }
