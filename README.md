@@ -1,6 +1,6 @@
 # ✨ Welcome Message
 - Send a title and subtitle message or a chat message when a player joins the server
-# ⚙️ Config
+# ⚙️ Configuration (config.yml)
 ```
 types:
   chat: false
