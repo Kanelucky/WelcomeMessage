@@ -13,6 +13,6 @@ title:
 chat:
   message: "§2Welcome to the server!"
 ```
-# Capture
+# 📸 Capture
 <img width="2880" height="1659" alt="Minecraft for Windows 1_26_2026 8_39_40 AM" src="https://github.com/user-attachments/assets/9716876f-7ff9-47aa-8521-6b31d69b295a" />
 
