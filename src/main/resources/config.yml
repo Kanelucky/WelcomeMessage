@@ -1,2 +1,11 @@
-title: "Welcome to the server!"
-subtitle: "Play your way"
+# You can enable one or both
+types:
+  chat: false
+  title: true
+
+title:
+  title: "§2Welcome to the server!"
+  subtitle: "Play your way"
+
+chat:
+  message: "§2Welcome to the server!"

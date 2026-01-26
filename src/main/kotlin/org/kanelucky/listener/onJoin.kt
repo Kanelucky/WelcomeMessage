@@ -9,9 +9,17 @@ class onJoin(private val config: Config) {
     @EventHandler
     fun onJoin(event: PlayerJoinEvent) {
         val player = event.player
-        val title = config.getString("title", "")
-        val subtitle = config.getString("subtitle", "")
-        player.sendTitle(title)
-        player.sendSubtitle(subtitle)
+        val typeChat: Boolean = config.getBoolean("types.chat")
+        val typeTitle: Boolean = config.getBoolean("types.title")
+        if (typeTitle) {
+            val title = config.getString("title.title", "")
+            val subtitle = config.getString("title.subtitle", "")
+            player.sendTitle(title)
+            player.sendSubtitle(subtitle)
+        }
+        if (typeChat) {
+            val message = config.getString("chat.message", "")
+            player.sendMessage(message)
+        }
     }
 }

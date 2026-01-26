@@ -13,8 +13,11 @@ class WelcomeMessage : Plugin() {
     override fun onEnable() {
         val configFile = File(pluginContainer.dataFolder.toFile(), "config.yml")
         val defaults = ConfigSection()
-        defaults.set("title", "Welcome to the server!")
-        defaults.set("subtitle", "Play your way")
+        defaults.set("types.chat", false)
+        defaults.set("types.title", true)
+        defaults.set("title.title", "§2Welcome to the server!")
+        defaults.set("title.subtitle", "Play your way")
+        defaults.set("chat.message", "§2Welcome to the server!")
         config = Config(configFile, Config.YAML, defaults)
         Server.getInstance().eventBus.registerListener(onJoin(config))
         pluginLogger.info("${TextFormat.GREEN}Enabled successfully!")

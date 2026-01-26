@@ -6,8 +6,8 @@ plugins {
 }
 
 group = "org.kanelucky"
-description = "Hello Allay from Kotlin!"
-version = "0.1.0"
+description = "A simple AllayMC plugin that sends a message when a player joins the game"
+version = "0.1.1"
 
 repositories {
     mavenCentral()
@@ -19,7 +19,7 @@ repositories {
 
 val serverVersion: String? = null
 dependencies {
-    compileOnly(group = "org.allaymc.allay", name = "api", version = "0.22.0")
+    compileOnly(group = "org.allaymc.allay", name = "api", version = "0.23.0")
 }
 
 kotlin {
