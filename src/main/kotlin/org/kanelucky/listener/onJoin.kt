@@ -11,6 +11,7 @@ class onJoin(private val config: Config) {
         val player = event.player
         val typeChat: Boolean = config.getBoolean("types.chat")
         val typeTitle: Boolean = config.getBoolean("types.title")
+        val typeActionbar: Boolean = config.getBoolean("types.actionbar")
         if (typeTitle) {
             val title = config.getString("title.title", "")
             val subtitle = config.getString("title.subtitle", "")
@@ -20,6 +21,10 @@ class onJoin(private val config: Config) {
         if (typeChat) {
             val message = config.getString("chat.message", "")
             player.sendMessage(message)
+        }
+        if (typeActionbar) {
+            val message = config.getString("actionbar.message", "")
+            player.sendActionBar(message)
         }
     }
 }

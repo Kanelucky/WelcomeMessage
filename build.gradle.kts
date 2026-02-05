@@ -7,7 +7,7 @@ plugins {
 
 group = "org.kanelucky"
 description = "A simple AllayMC plugin that sends a message when a player joins the game"
-version = "0.1.1"
+version = "0.1.2"
 
 repositories {
     mavenCentral()
